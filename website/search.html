@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en"  dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="searchStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+
+    <title>search page</title>
+</head>
+<body>
+
+    <div class="header-Line">
+
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-md">
+            <a class="navbar-brand" href="https://www.accord.ps"><img src="d:\sahab\acordLogo.png" width="140px" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="dropdown pb-3 d-none d-lg-block">
+            <button class="btn dropdown-toggle me-4 mb-0 mt-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              التصنيفات 
+            </button>
+            <div class="dropdown-menu pt-3" aria-labelledby="dropdownMenuButton1">
+              <div class="d-flex">
+                <i class="fa fa-angle-double-up pt-1"></i>
+                <h6 class="pe-1">الاثاث المنزلي</h6>
+              </div>
+              
+              <div class="row pe-4">
+                <div class="col-4"> 
+                    <a class="dropdown-item" href="">فراشات النوم</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">ملحقات</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">فرش عربي</a>
+                </div>
+                <div class="col-4"> 
+                    <a class="dropdown-item" href=""> طاولات</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">اطقم الكنب</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href=""> اطقم نوم</a>
+                </div>
+              </div>
+              <div class="d-flex pt-3">
+                <i class="fa fa-angle-double-up pt-1 "></i>
+                <h6 class="pe-1"> الأجهزة الكهربائية</h6>
+              </div>
+              
+              <div class="row pe-4 ">
+                <div class="col-4"> 
+                    <a class="dropdown-item" href=""> جوالات</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">غسالات</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">فروش غاز</a>
+                </div>
+                <div class="col-4"> 
+                    <a class="dropdown-item" href=""> ثالاجات</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">شاشة التلفاز</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">  مكيفات</a>
+                </div>
+                <div class="col-4"> 
+                    <a class="dropdown-item" href=""> افران</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href=""> خلاطات ومفارم</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">  دفايات</a>
+                </div>
+                <div class="col-4"> 
+                    <a class="dropdown-item" href=""> فريزر</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">مكواة</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href="">مكنسة كهربائية</a>
+                </div>
+                <div class="col-4">
+                    <a class="dropdown-item" href=""> ملحقات</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          
+          <div class="collapse navbar-collapse  " id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mt-2 text-center list-inline d-flex" >
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="https://partner.accordpal.com/ " target="_blank"> <button class="text-white pe-3 ps-3 pt-1 pb-1 rounded border-0" style="background-color:  rgb(73, 185, 117);"> <i class="fa fa-plus-circle text-white" aria-hidden="true"></i> سجل كمورد </button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#"><i class="fa fa-search nav-item" aria-hidden="true"><br>البحث</i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#"><i class="fa-regular fa-heart position-relative" aria-hidden="true"><br>المفضلة
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle" style="background-color: #7600d9; width: 22px;
+                      height:18px; line-height: 10px;">0</span></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i class="fa fa-shopping-cart position-relative" aria-hidden="true"><br>سلة المشتريات
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle" style="background-color: #7600d9; width: 22px;
+                      height:18px; line-height: 10px; right: -8px;">0</span> </i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#"><i class="fa-regular fa-user" aria-hidden="true"><br>تسجيل الدخول</i></a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    
+    <div class="input-box" style="background-color: rgb(65, 130, 195); height: 70px;">
+       <div class="container pt-1">
+            <i class="fa fa-search "></i>     
+            <input type="text" class="form-control-lg w-100 border-0 m-1 mt-2 pe-5" placeholder="البحث...">
+           
+       </div>               
+    </div>
+
+    <div class="products">
+        <div class="container">
+            <div class="items overflow-hidden overflow-scroll d-flex text-center pt-3 mt-3 pe-3">
+                <div class="item   ">
+                    <img src="images\ic1.png"  alt="">
+                    <p>الاثاث المنزلي</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic2.png" alt="">
+                    <p>الاجهزة الكهربائية</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic3.png"  alt="">
+                    <p>صالات الافراح</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic4.png"  alt="">
+                    <p>بدل الزفاف</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic5.png"  alt="">
+                    <p>الكوافيرات</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic6.png"  alt="">
+                    <p>بطاقات الافراح</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic7.png"  alt="">
+                    <p>تزيين الورود</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic8.png"  alt="">
+                    <p>تأجير الباصات</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic9.png"  alt="">
+                    <p>استوديوهات تصوير</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic10.png"  alt="">
+                    <p>المطابخ</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic11.png"  alt="">
+                    <p>الفنادق</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic12.png" alt="">
+                    <p>فنون استعراضية</p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic13.png"  alt="">
+                    <p>المسارح </p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic13.png"  alt="">
+                    <p>المسارح </p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic13.png"  alt="">
+                    <p>المسارح </p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic13.png"  alt="">
+                    <p>المسارح </p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic13.png" alt="">
+                    <p>المسارح </p>
+                </div>
+                <div class="item">
+    
+                    <img src="images\ic13.png"  alt="">
+                    <p>المسارح </p>
+                </div>
+            </div>
+            <img src="images\adv-search1.jpg" class="w-100 pt-3" alt="">
+        </div>
+    </div>
+
+    <div class="middle pt-4 " style="background-color: #f9f7f6;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 ">
+
+                    <div class="top-sec d-flex">
+
+                        <div class=" col-sm-6 col-md-4  pr-0 pl-0 justify-content-between">
+
+                          <!-- <select class="form-control">
+                            <option></option>
+                            <option>الاقل سعرا</option>
+                            <option>الاعلى سعرا</option>
+                            <option>اكثر خصومات</option>
+                            <option>الاحدث</option>
+                            <option>الاقدم</option>
+                          </select> -->
+
+                            <div class="dropdown pe-0">
+                                <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-regular fa-square-chevron-down"></i> الترتيب حسب السعر 
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <li><a class="dropdown-item" href="#">الأقل سعراً</a></li>
+                                  <li><a class="dropdown-item" href="#"> الأعلى سعراً</a></li>
+                                  <li><a class="dropdown-item" href="#"> الأكثر خصومات </a></li>
+                                  <li><a class="dropdown-item" href="#">  الأحدث  </a></li>
+                                  <li><a class="dropdown-item" href="#">  الاقجم  </a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+
+                        <div class=" col-sm-12 col-md-6 d-block d-md-block">
+                            <div class="form-group d-flex">
+                                <input type="number" class="form-control" placeholder="الأقل سعرا">
+                                <span class=" pe-3 ps-3 pt-1 ">الى</span>
+                                <input type="number" class="form-control" placeholder="الأعلى سعرا">
+                               
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-2">
+                          <span>4267صنف </span>
+                        </div>
+
+                        
+                       
+                    </div>
+                    <div class="cards pt-3">
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-md-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-md-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-md-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3" >
+                            <div class="row g-0 d-flex">
+                              <div class="col-3 ">
+                                <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                              </div>
+                              <div class="col-9">
+                                <div class="card-body">
+                                 <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                                  <a href="" class="text-secondary">صالات الافراح</a>
+                                  <a href="" class="text-secondary"> -قاعة افراح</a>
+                                  <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                                  <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="images\adv-home.jpg" class="w-100" alt="">
+
+                    <div class="cards pt-3">
+                      <div class="card mb-3" >
+                        <div class="row g-0 d-flex">
+                          <div class="col-3 ">
+                            <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                          </div>
+                          <div class="col-9">
+                            <div class="card-body">
+                             <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                              <a href="" class="text-secondary">صالات الافراح</a>
+                              <a href="" class="text-secondary"> -قاعة افراح</a>
+                              <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                              <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                        
+                       <div class="card mb-3" >
+                      <div class="row g-0 d-flex">
+                        <div class="col-3 ">
+                          <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                        </div>
+                        <div class="col-9">
+                          <div class="card-body">
+                           <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                            <a href="" class="text-secondary">صالات الافراح</a>
+                            <a href="" class="text-secondary"> -قاعة افراح</a>
+                            <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                            <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                          </div>
+                        </div>
+                      </div>
+                       </div>
+
+                      <div class="card mb-3" >
+                    <div class="row g-0 d-flex">
+                      <div class="col-3 ">
+                        <img src="d:\sahab\صالة اللوتس.jpeg" class="img-fluid rounded-start" width="203px" alt="...">
+                      </div>
+                      <div class="col-9">
+                        <div class="card-body">
+                         <a href="" class="position-absolute start-0"><i class="fa-regular fa-heart " style="width: 50px; font-size: 30px;" aria-hidden="true"></i></a>
+                          <a href="" class="text-secondary">صالات الافراح</a>
+                          <a href="" class="text-secondary"> -قاعة افراح</a>
+                          <h6 class="card-title pt-2 ">صالة اللوتس  <span class="text-secondary">( صالة اللوتس للأفراح )</span></h6>
+                          <p class="card-text">من شهر 11 إلى شهر 4، غزة، مكيَف، 600 كرسي، 68 طاولة</p>  
+                        </div>
+                      </div>
+                    </div>
+                      </div>
+
+                    </div>
+
+
+                    <nav aria-label="Page navigation ">
+                        <h6 class="text-start text-secondary">تم عرض 50 صنف من 4267 صنف</h6>
+                        <ul class="pagination justify-content-end">
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                              <span aria-hidden="true">&laquo;</span>
+                            </a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item"><a class="page-link" href="#">4</a></li>
+                          <li class="page-item"><a class="page-link" href="#">5</a></li>
+                          <p class="ps-2 pe-2">...</p>
+                          <li class="page-item"><a class="page-link" href="#">6</a></li>
+                          <li class="page-item"><a class="page-link" href="#">7</a></li>
+                          <li class="page-item"><a class="page-link" href="#">8</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                              <span aria-hidden="true">&raquo;</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
+
+                      <!-- Model -->
+                      <div class="modal" tabindex="-1">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title"> اهلا وسهلا بك في اكورد</h5>
+                              <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>يجب عليك التسجيل الدخول اولا او تسجيل في موقع اكورد</p>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" style="background-color: #7600d9;" class="text-white rounded border-0 p-2" data-bs-dismiss="modal">تسجيل الدخول</button>
+                              <button type="button" style="background-color: #7600d9;" class="text-white rounded border-0 p-2">تسجيل </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>  
+                <div class="col-md-3">
+                    <div class="card" >
+                        <img src="https://accordpal.com/storage/app/public/29810/conversions/7db108b78439315a53c31d89dabbb8a2-thumb.jpg" height="250px" width="100%" class="card-img-top w-100" alt="...">
+                        <div class="card-body">
+                         <a href="https://accord.ps/products/15055"><h6 class="text-center">طاولة وسط_20026 </h6></a>
+                        </div>
+                    </div>
+                    <div class="card" >
+                        <img src="https://accordpal.com/storage/app/public/26423/conversions/9d6df2d239ec8471c5d76c70e90916f4-thumb.jpg" height="250px" width="100%" class="card-img-top w-100" alt="...">
+                        <div class="card-body">
+                         <a href="https://accord.ps/products/13364"><h6 class="text-center">            طاولة وسط - 20016           </h6></a>
+                        </div>
+                    </div>
+                    <div class="card" >
+                        <img src="https://accordpal.com/storage/app/public/18480/conversions/f262c98ac5644744353c289482ae6845-thumb.jpg" height="250px" width="100%" class="card-img-top w-100" alt="...">
+                        <div class="card-body">
+                         <a href="https://accord.ps/products/7942"><h6 class="text-center">طاولة وسط_20026 </h6></a>
+                        </div>
+                    </div>
+                    <div class="card" >
+                        <img src="https://accordpal.com/storage/app/public/16272/conversions/f0e47607c547d8dbf5b55e139ba2ea3c-thumb.jpg" height="250px" width="100%" class="card-img-top w-100" alt="...">
+                        <div class="card-body">
+                         <a href="https://accord.ps/products/15055"><h6 class="text-center">طاولة وسط_20026 </h6></a>
+                        </div>
+                    </div>
+                    <div class="list pt shadow bg-body rounded">
+                        <h6 class="text-center p-2" style="background-color: #dfdede;">شركة آت هوم للأثاث العصري</h6>
+                        <item class="d-flex pt-1" style="background-color: white; margin-top: 0;">
+                            <img src="https://accordpal.com/storage/app/public/31413/conversions/ab0bc4b9440562bfaf2b1049b1aa5dda-thumb.jpg" width="50px" alt="">
+                            <div class="details">
+                                <div class="text-center m-1 " style="font-size: 13px;">
+                                    <span class="price">₪3800</span>
+                                    <span class="discount"></span>
+                                    <del data-source="original_price">₪4800</del>
+                                    <p>غرفة نوم اسطنبول - 2010058</p>
+                                    <p> ( شركة آت هوم للأثاث العصري ) </p>
+                                </div>
+                            </div>
+                        </item>   
+                        <item class="d-flex pt-1" style="background-color: white; margin-top: 0;">
+                            <img src="https://accordpal.com/storage/app/public/31035/conversions/1526bc5068a269c82a7009b170e9f1f1-thumb.jpg" width="50px" alt="">
+                            <div class="details">
+                                <div class="text-center m-1 " style="font-size: 13px;">
+                                    <span class="price">₪3800</span>
+                                    <span class="discount"></span>
+                                    <del data-source="original_price">₪4800</del>
+                                    <p>غرفة نوم اسطنبول - 2010058</p>
+                                    <p> ( شركة آت هوم للأثاث العصري ) </p>
+                                </div>
+                            </div>
+                        </item>   
+                        <item class="d-flex pt-1" style="background-color: white; margin-top: 0;">
+                            <img src="https://accordpal.com/storage/app/public/31034/conversions/dd6522ad36eeab086e9cb0b31a94847c-thumb.jpg" width="50px" alt="">
+                            <div class="details">
+                                <div class="text-center m-1 " style="font-size: 13px;">
+                                    <span class="price">₪3800</span>
+                                    <span class="discount"></span>
+                                    <del data-source="original_price">₪4800</del>
+                                    <p>غرفة نوم اسطنبول - 2010058</p>
+                                    <p> ( شركة آت هوم للأثاث العصري ) </p>
+                                </div>
+                            </div>
+                        </item>   
+                        <item class="d-flex pt-1" style="background-color: white; margin-top: 0;">
+                            <img src=" https://accordpal.com/storage/app/public/31033/conversions/49550fe42bb851707293c62ff49e3b74-thumb.jpg" width="50px" alt="">
+                            <div class="details">
+                                <div class="text-center m-1 " style="font-size: 13px;">
+                                    <span class="price">₪3800</span>
+                                    <span class="discount"></span>
+                                    <del data-source="original_price">₪4800</del>
+                                    <p>غرفة نوم اسطنبول - 2010058</p>
+                                    <p> ( شركة آت هوم للأثاث العصري ) </p>
+                                </div>
+                            </div>
+                        </item>   
+                    </div>
+                    <div class="d-none d-sm-block">
+                        <img src="images\serlist.jpg" width="100%" class="pt-3" alt="">
+                    </div>
+                  
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-none  d-sm-block">
+        <img src="images\call-center.jpg" class=" rounded w-100 pt-3 " alt="">
+    </div>
+
+    <div class="container d-md-none ">
+        <img src="images\contactusmobile.jpg" class=" rounded w-100 pt-3 " alt="">
+    </div>
+
+    <div class="footer-Line">
+
+    </div>
+
+    <div class="container">
+        <footer>
+            <div class="row">
+                <div class="col-sm-12 col-xl-4">
+                    <h5 class="text-black"> للاتصال بنا</h5>
+                    <p>يسرنا تواصلك معنا من خلال أي من القنوات المتاحة.</p>
+                    <div class="d-flex">
+                        <dl class="me-0">
+                            <dt class="font-weight-bold">أرقام التواصل</dt>
+                            <dd class="me-0" >1700400600</dd>
+                            <dt class="font-weight-bold"> العنوان</dt>
+                            <dd class="me-0" >فلسطين،غزة مقابل البوابة <br>الشمالية لجامعة الازهر</dd>
+                           
+                        </dl>
+                        <dl class="me-5">
+                            <dt class="font-weight-bold"> البريد الالكتروني</dt>
+                            <dd class="me-0" >info@accord.ps</dd>
+                            <dt class="font-weight-bold">ساعات العمل </dt>
+                            <dd class="me-0" >    السبت - الخميس<br>9:00 صباحاً - 3:30 مساءً</dd>
+                           
+                        </dl> 
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="info">
+                        <ul class="list-unstyled ">
+                            <li><h5 class="text-black">المعلومات</h5></li>
+                            <li>من نحن</li>
+                            <li>سياسة الخصوصية</li>
+                            <li>للاتصال بنا</li>
+                            <li>الاسئلة الشائعة</li>
+                            <li>مورد جديد</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-6">
+                    <div class="info">
+                        <ul class="list-unstyled ">
+                            <li><h5 class="text-black">الملف الشخصي</h5></li>
+                            <li>التسجيل</li>
+                            <li>تسجيل الدخول</li>
+                            <li>المفضلة </li>
+                            <li>سلة المشتريات </li>
+                            <li> البحث</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6 col-lg-4">        
+                    <div class="whatsup pe-4">
+                        <h5 class="text-black">قائمة الواتس اب</h5>
+                        <p>نضم إلى قائمة الواتس أب الخاصة بالمنصة للبقاء <br>على إطلاع بأحدث الخصومات والعروض الخاصة.</p>
+                        <input type="numer" placeholder="رقم الواتس اب">
+                        <button class="text-white border-0 rounded" style="background-color: #7e57c6;">الاشتراك</button>
+                        <p class="pt-3">وسائل التواصل الاجتماعي</p>
+                        <div class="text-white">
+                            <i class="fa-brands fa-facebook rounded-circle text-white p-2"></i>
+                            <i class="fa-brands fa-instagram me-2 rounded-circle text-white p-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- <button id="Go-to-top"><i class="fa fa-arrow-circle-up"></i></button>
+        <script>
+            let btn=document.getElementById('Go-to-top');
+    
+            window.onscroll=function(){
+                        if(scrollY >= 600){
+                            btn.style.display='block';
+                        } 
+                        else{
+                            btn.style.display='none';
+                        }
+                    }
+    
+    
+    
+            btn.addEventListener('click',function(){
+                scroll({
+                    left:0,
+                    top:0,
+                    behavior:"smooth"
+    
+                })
+            })
+        </script> -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

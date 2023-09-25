@@ -1,0 +1,150 @@
+.header-Line{
+    height: 5px;
+    background: -webkit-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: -o-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: -ms-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: linear-gradient(to right, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+}
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: calibri;
+    color: rgb(105, 103, 102);
+}
+*{
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important; */
+    color:rgb(105, 103, 102) ;
+}
+
+
+.navbar .dropdown .dropdown-menu {
+    text-align: right;
+    right: 0;
+    min-width: 57rem;
+    top: 140%;
+}
+
+.input-box{
+    position: relative !important;
+  }
+
+  
+.input-box i {
+    position: absolute !important;
+    right: 145px;
+    top:30px;
+    color:#ced4da;
+  }
+
+.products .item img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 2px 6px 8px rgba(0,0,0,0.3);
+    background-color: white;
+    
+}
+ .item{
+    padding-left:10px;
+}
+
+.item p{
+    margin: 5px;
+    white-space: nowrap;
+}
+
+a{
+    text-decoration: none !important;
+    color: black !important;
+}
+a:hover{
+    text-decoration: underline !important;
+   
+}
+
+ a:hover.position-absolute  .fa-regular{
+    color: red !important;
+}
+
+.card img{
+    background-color: white !important;
+    padding: 20px !important;
+}
+.card-body {
+    padding-right:0px !important;
+}
+.list img{
+    background-color: white !important;
+
+    
+}
+
+.footer-Line{
+    height: 10px;
+    margin:15px;
+    width: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: -o-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: -ms-linear-gradient(left, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+    background: linear-gradient(to right, rgba(255,208,7) 0%, rgba(255,208,7) 12.5%,rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%);
+}
+
+.fa-facebook{
+    background-color: #3c5a99;
+
+}
+.fa-instagram{
+    background-color: #815dc7;
+
+}
+
+#Go-to-top{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: rgb(255, 209, 10);
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: none;
+}
+/* .menu{
+    position: relative;
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu .toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: 1.25s;
+    z-index: 5;
+}
+.menu.active .toggle{
+    transform: rotate(360deg);
+    box-shadow: 0 0 0 2px #333;
+}
+.menu li{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.menu li a{
+
+}
+ */
